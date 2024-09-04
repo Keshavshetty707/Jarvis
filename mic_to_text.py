@@ -4,7 +4,7 @@ import speech_recognition as sr
 
 recognizer = sr.Recognizer()
 def mic1():
-    with sr.Microphone(device_index=1) as source:
+    with sr.Microphone(device_index=0) as source:
         print("Say something:")
         recognizer.adjust_for_ambient_noise(source)
 
