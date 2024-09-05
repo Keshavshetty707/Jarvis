@@ -21,22 +21,19 @@ def temp_city(city):
     print(f"Humidity: {humidity}, Temp in Celcious:{temp}")
 
 definitions = [
-
-            {
-                "name" : "temp_city",  #name of function to be called
-                "description" : "find weather, temperature of a city"
-                "parameters":
-                {
-                    "type":"object",
-                    "properties":{
-                    "city" : {                   #Argument for function temp_city
-                        "type":"string",
-                        "description":"City to find weather"
-                    }
-
-                    }
+    {
+        "name" : "temp_city",  # name of function to be called
+        "description" : "find weather, temperature of a city",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "city": {  # Argument for function temp_city
+                    "type": "string",
+                    "description": "City to find weather"
                 }
             }
+        }
+    }
 ]
 
 
